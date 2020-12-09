@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,200&family=Roboto:wght@100&display=swap');
+    }
+.container__contact{
+  padding: 0 30px;
+}
+.contact{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  width: 100%;
+  margin-top: 13px;
+  margin-left: 12px;
+}
+
+img{
+    width: 500px;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 41px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 56px;
+}
+.component__contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 84px;
+}
+
+.dato{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    }
+.info{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.contenido{
+    display: flex;
+}
+.email{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: -22px;
+}
+
+.image{
+    width: 400px;
+    padding: 0 40px 0 0;
+}
+.contact__namedd{
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+.contact__emaildd{
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+.contact__telephonedd{
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+.contact__namedt{
+  color: rebeccapurple;
+}
+.contact__emaildt{
+  color: rebeccapurple;
+}
+.contact__telephonedt{
+  color: rebeccapurple;
+}
+a{
+  color: black;
+}
+a:hover{
+  
+  text-decoration: none;
+  color: rgb(109, 3, 100);
+}
+.icon__github{
+  color: rebeccapurple;
+}
+.icon__github:hover{
+  color: black;
+}
+.icon__linkedin{
+  color: rebeccapurple;
+}
+.icon__linkedin:hover{
+  color: black;
+}
+.content__icons{
+  display: flex;
+  justify-content: flex-start;
+}
+.link{
+  margin-right: 33px;
+}
+//ANIMACION-----------------------------------------------------------------------------------------
+/*base code*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+  /*the animation definition*/
+  @-webkit-keyframes bounceInLeft {
+    0%, 100%, 60%, 75%, 90% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+      transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+    }
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(-3000px, 0, 0);
+      transform: translate3d(-3000px, 0, 0)
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(25px, 0, 0);
+      transform: translate3d(25px, 0, 0)
+    }
+    75% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0)
+    }
+    90% {
+      -webkit-transform: translate3d(5px, 0, 0);
+      transform: translate3d(5px, 0, 0)
+    }
+    100% {
+      -webkit-transform: none;
+      transform: none
+    }
+  }
+  @keyframes bounceInLeft {
+    0%, 100%, 60%, 75%, 90% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);
+      transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
+    }
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(-3000px, 0, 0);
+      -ms-transform: translate3d(-3000px, 0, 0);
+      transform: translate3d(-3000px, 0, 0)
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(25px, 0, 0);
+      -ms-transform: translate3d(25px, 0, 0);
+      transform: translate3d(25px, 0, 0)
+    }
+    75% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      -ms-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0)
+    }
+    90% {
+      -webkit-transform: translate3d(5px, 0, 0);
+      -ms-transform: translate3d(5px, 0, 0);
+      transform: translate3d(5px, 0, 0)
+    }
+    100% {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none
+    }
+  }
+  .bounceInLeft {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft
+  }
+
+  //----------------------------------------------------------------------------FIN ANIMACION
+
+@media screen and (min-width: 426px)and (max-width: 1023px ){//tamaño tablet------------------------
+    .image {
+      width: 250px;
+      padding: 0 40px 0 0;
+  }
+    .container__contact{
+        margin-top: 100px;
+    }
+    .contact{
+        padding: 0 0 39px 0;
+    }
+    h1{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 767px){//tamaño movil
+    
+    .component__contact{
+        display: flex;
+        justify-content: flex-start;
+    }
+    h1{
+        font-size: 36px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 22px;
+    }
+  
+    .dato{
+        font-size: 13px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .contenido {
+        display: flex;
+        justify-content: center;
+    }
+    .info {
+        font-size: 13px;
+        margin-left: 10px;
+
+    }
+    .email {
+        font-size: 13px;
+        margin-left: -22px;
+    }
+    .contact__namedd{
+      font-size: 21px;
+    }
+    .contact__emaildd{
+      font-size: 21px;
+    }
+    .contact__telephonedd{
+      font-size: 21px;
+    }
+    .contact__namedt{
+      font-size: 14px;
+    }
+    .contact__emaildt{
+      font-size: 14px;
+    }
+    .contact__telephonedt{
+      font-size: 14px;
+    }
+    .image {
+      width: 200px;
+      padding: 0 40px 0 0;
+  }
+   
+}
